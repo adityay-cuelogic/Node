@@ -1,4 +1,6 @@
 const express = require("express");
+const dotenv = require("dotenv").config();
+
 const Connection = require("./connection");
 const obj = new Connection();
 obj.connection();
@@ -8,4 +10,4 @@ app.use(express.json());
 
 app.use("/api/users", require("./User/UserRouter") );
 
-app.listen(3000);
+app.listen(process.env.PORT);

@@ -56,7 +56,7 @@ const login = ( req, resp ) => {
     bcrypt.compare( req.body )
     .then( () => {
         let token = jwt.sign({username: req.body.userName},
-            process.env.secret,
+            process.env.SECRET,
             { expiresIn: '24h' // expires in 24 hours
             }
           );

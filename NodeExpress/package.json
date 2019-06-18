@@ -1,0 +1,23 @@
+{
+  "name": "nodeexpress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "moment": "^2.24.0",
+    "nodemon": "^1.19.1",
+    "passport": "^0.4.0",
+    "uuid": "^3.3.2"
+  }
+}

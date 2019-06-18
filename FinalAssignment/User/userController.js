@@ -142,7 +142,6 @@ const updateUserByName = ( req, res ) => {
 }
 
 const getUserByName = ( req, res ) => {
-console.log("req = ", req.decoded);
     userActivityModel.where({
         userName: req.params.userName
     })
